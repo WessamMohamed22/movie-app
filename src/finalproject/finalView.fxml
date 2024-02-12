@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1120.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.FinalController">
+    <children>
+      <VBox layoutX="14.0" layoutY="108.0" prefHeight="383.0" prefWidth="145.0">
+         <children>
+              <Pane prefHeight="77.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="113.0" fitWidth="160.0" layoutX="14.0" layoutY="-66.0" onMousePressed="#movies" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+              </Pane>
+              <VBox prefHeight="339.0" prefWidth="145.0">
+                  <children>
+                      <Button fx:id="playing" mnemonicParsing="false" onAction="#run" prefHeight="42.0" prefWidth="164.0" style="-fx-background-color: #141414; -fx-font-weight: bold; -fx-font-family: Arial, Helvetica, sans-serif;" text="Playing" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets top="21.0" />
+                          </VBox.margin>
+                          <font>
+                              <Font size="15.0" />
+                          </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f8f6f6" glyphName="FILM" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </Button>
+                      <Button fx:id="top_rated" layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onAction="#run2" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #141414; -fx-font-weight: bold; -fx-font-family: Arial, Helvetica, sans-serif;" text="Top Rated" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets top="21.0" />
+                          </VBox.margin>
+                          <font>
+                              <Font size="15.0" />
+                          </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="FILM" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </Button>
+                      <Button fx:id="popular" layoutX="10.0" layoutY="127.0" mnemonicParsing="false" onAction="#run3" prefHeight="42.0" prefWidth="160.0" style="-fx-background-color: #141414; -fx-font-weight: bold; -fx-font-family: Arial, Helvetica, sans-serif;" text="Popular" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets top="21.0" />
+                          </VBox.margin>
+                          <font>
+                              <Font size="15.0" />
+                          </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#fcfcfc" glyphName="FILM" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </Button>
+                      <Button fx:id="Home" mnemonicParsing="false" onMousePressed="#movies" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #141414; -fx-font-weight: bold; -fx-font-family: Arial, Helvetica, sans-serif;" text="Home" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets top="21.0" />
+                          </VBox.margin>
+                          <font>
+                              <Font size="15.0" />
+                          </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="1.5em" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </Button>
+                  </children>
+              </VBox>
+         </children>
+      </VBox>
+        <VBox layoutX="209.0" layoutY="27.0" prefHeight="607.0" prefWidth="903.0">
+            <children>
+                <Label prefHeight="58.0" prefWidth="348.0" style="-fx-font-weight: bold;" text="OUR MOVIES" textFill="WHITE">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#f5f5f5" glyphName="STAR" />
+               </graphic>
+                </Label>
+            <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/2.jpeg" />
+               </image>
+            </ImageView>
+            </children>
+        </VBox>
+      <FontAwesomeIcon fill="WHITE" glyphName="BELL" layoutX="1006.0" layoutY="53.0" size="1.5em" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1019.0" layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="16.0" style="-fx-background-color: #da0505; -fx-background-radius: 100%;" text="8" textFill="#f2e3e3" />
+      <FontAwesomeIcon fill="#fff5f5" glyphName="SEARCH" layoutX="785.0" layoutY="50.0" size="1.2em">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIcon>
+      <TextField layoutX="809.0" layoutY="28.0" promptText="Search Movies...." style="-fx-background-color: #141414;" />
+        <ScrollPane fx:id="gridContainer" layoutX="599.0" layoutY="418.0" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: black; visibility: hiddin;">
+            <content>
+                <GridPane fx:id="movieContainer" prefHeight="226.0" prefWidth="35.0" style="-fx-background-color: black;">
+
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>
